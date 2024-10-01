@@ -1,10 +1,20 @@
 {
-  "name": "resturant-page",
+  "name": "restaurant-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview":"vite preview",
+    "lint":"eslint",
+    "build:prod":" webpack --mode production",
+    "git:add":"git add .",
+    "git:commit":" git commit -m 'Production build'",
+    "git:push": "git push",
+    "deploy": "npm run build:prod && npm run git:add && npm run git:commit && npm run git:push"
+
   },
   "keywords": [],
   "author": "",
