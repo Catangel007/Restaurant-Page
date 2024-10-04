@@ -5,7 +5,7 @@ import "./styles.css";
 
 
  console.log(greeting);
- alert("food is Ready\n Welcome!")
+ alert("food is Ready\n Welcome!");
 
  
 
