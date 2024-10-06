@@ -2,3 +2,10 @@
  body {
     background-color: rebeccapurple;
  }
+
+ button{
+   background-color: rgb(45, 135, 254);
+   height: 50px;
+   width: 50px;
+   border-radius: 20px;
+ }
