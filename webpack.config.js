@@ -11,13 +11,13 @@
     },
     devtool:"eval-source-map",
     devServer: {
-        watchFiles: ["./src/restaurant.html"],
+        watchFiles: ["./src/home.html"],
     },
  
 
  plugins:[
     new HtmlWebpackPlugin({
-        template:"./src/restaurant.html",
+        template:"./src/home.html",
     }),
 ],
 
