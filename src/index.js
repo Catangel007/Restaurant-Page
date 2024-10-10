@@ -1,9 +1,14 @@
 
 import "./styles.css"; 
 import {greeting} from "./greeting.js";
-
+import {container2} from "./contact.js";
+import {container1} from "./menu.js";
 
 // more declarations
+const homeBtn = document.querySelector(".home");
+const menuBtn = document.querySelector(".menu");
+const contactBtn = document.querySelector(".contact");
+
 const logo = document.createElement("img");
 const heading = document.createElement("h1");
 const words = document.createElement("p");
@@ -13,9 +18,26 @@ const listChildren = document.createElement("li");
 const locationHeader = document.createElement("h1");
 const locationP = document.createElement("p");
 
+
+
+
 let content = document.getElementById("content");
-content.appendChild("container");
+
 content.style.backgroundImage = 'url("src/AdobeStock_116772438_Preview.jpeg")';
+
+
+//add functionality to buttons
+homeBtn.addEventListener("click", ()=>{
+    content.appendChild(container);
+});
+
+menuBtn.addEventListener("click", ()=>{
+    content.appendChild(container1);
+});
+
+contactBtn.addEventListener("click", ()=>{
+    content.appendChild(container2);
+});
 
 // append children to parent node.
 const container = document.createElement("div");

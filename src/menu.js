@@ -2,6 +2,15 @@
 const logo = document.createElement("img");
 const heading = document.createElement("h1");
 
+
+const container1 = document.createElement("div");
+container1.appendChild(header);
+container1.appendChild(menuDiv);
+container1.appendChild(div1);
+container1.appendChild(div2);
+container1.appendChild(div3);
+
+
 // header and logo
 const header = document.createElement("div");
 header.appendChild(logo);
@@ -48,5 +57,5 @@ nameFood1 = "Meat-pie";
 foodPrice = "$6.99";
 
 
-
+export {container1};
 
