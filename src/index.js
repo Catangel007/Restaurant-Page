@@ -29,16 +29,22 @@ content.style.backgroundImage = 'url("src/AdobeStock_116772438_Preview.jpeg")';
 //add functionality to buttons
 homeBtn.addEventListener("click", ()=>{
     content.appendChild(container);
+    content.innerHTML=container;
 });
 
 menuBtn.addEventListener("click", ()=>{
     content.appendChild(container1);
+    content.innerHTML=container1;
 });
 
 contactBtn.addEventListener("click", ()=>{
     content.appendChild(container2);
+    content.innerHTML=container2;
 });
 
+// function updateScreen (){
+//     if 
+// }
 // append children to parent node.
 const container = document.createElement("div");
 container.appendChild(header);

@@ -1,14 +1,35 @@
- 
 *{
-  background-color: aquamarine;
+  margin:0;
 } 
+
    
 
 
  button{
-   background-color: rgb(45, 135, 254);
+   background-color: rgb(140, 88, 40);
    height: 50px;
-   width: 50px;
-   border-radius: 20px;
+   width: 80px;
+   border:0;
+   font-size: larger;
+   color: rgb(186, 130, 85);
+ }
+header>h1{
+  color: rgb(186, 130, 85);
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+  background-color: rgb(145, 143, 141);
+}
+
+ div#content{
+  background: url(./pikaso_edit.jpeg) #00d  fixed ;
+ 
+  height: 100vh;
  }
 
+header{
+  background-color: rgb(140, 88, 40);
+  display: flex;
+  height: 15vh;
+
+}

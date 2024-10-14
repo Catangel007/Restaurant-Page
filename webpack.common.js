@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
+      template: "./src/home.html",
     }),
   ],
   module: {
@@ -18,6 +18,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.svg$/,
+        use: "file-loader",
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
