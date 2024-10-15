@@ -28,7 +28,7 @@ footer{
 }
 
  div#content{
-  background: url(./pikaso_edit.jpeg) #00d  fixed ;
+  background: url(./pikaso_edit.jpeg)rgb(186, 130, 85) fixed ;
  
   height: 100vh;
  }

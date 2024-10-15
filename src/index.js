@@ -1,48 +1,38 @@
 
 import "./styles.css"; 
 import {greeting} from "./greeting.js";
-import {container2} from "./contact.js";
-import {container1} from "./menu.js";
-
-// more declarations
-const homeBtn = document.querySelector(".home");
+import {contactPage} from "./contact.js";
+import {menuPage} from "./menu.js";
+import {homePage} from "./home.js";
+// // more declarations
+ const homeBtn = document.querySelector(".home");
 const menuBtn = document.querySelector(".menu");
 const contactBtn = document.querySelector(".contact");
 
-const logo = document.createElement("img");
-const heading = document.createElement("h1");
-const words = document.createElement("p");
-const headerTime = document.createElement("h1");
-const listTime = document.createElement("ul");
-const listChildren = document.createElement("li");
-const locationHeader = document.createElement("h1");
-const locationP = document.createElement("p");
+// const logo = document.createElement("img");
+// const heading = document.createElement("h1");
+// const words = document.createElement("p");
+// const headerTime = document.createElement("h1");
+// const listTime = document.createElement("ul");
+// const listChildren = document.createElement("li");
+// const locationHeader = document.createElement("h1");
+// const locationP = document.createElement("p");
 
 
 console.log("yeppie!");
 
-let content = document.getElementById("content");
-
-homeBtn.classList.add("home");
-menuBtn.classList.add("menu");
-contactBtn.classList.add("contact");
-container.classList.add("container");
-
 
 //add functionality to buttons
 homeBtn.addEventListener("click", ()=>{
-    content.appendChild(container);
-    content.innerHTML=container;
+   homePage();
 });
 
 menuBtn.addEventListener("click", ()=>{
-    content.appendChild(container1);
-    content.innerHTML=container1;
+   menuPage();
 });
 
 contactBtn.addEventListener("click", ()=>{
-    content.appendChild(container2);
-    content.innerHTML=container2;
+    contactPage();
 });
 
 // function updateScreen (){
