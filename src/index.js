@@ -19,11 +19,14 @@ const locationHeader = document.createElement("h1");
 const locationP = document.createElement("p");
 
 
-
+console.log("yeppie!");
 
 let content = document.getElementById("content");
 
-content.style.backgroundImage = 'url("src/AdobeStock_116772438_Preview.jpeg")';
+homeBtn.classList.add("home");
+menuBtn.classList.add("menu");
+contactBtn.classList.add("contact");
+container.classList.add("container");
 
 
 //add functionality to buttons
