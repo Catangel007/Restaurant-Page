@@ -2,9 +2,6 @@
   margin:0;
 } 
 
-   
-
-
  button{
    background-color: rgb(140, 88, 40);
    height: 50px;
@@ -56,4 +53,8 @@ header{
 }
 .contact::after{
   text-decoration: double;
+}
+
+#home-page{
+  height: 50vh;;
 }

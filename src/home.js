@@ -11,10 +11,10 @@
      <ul>
     <li>Sunday:8am - 10pm</li>;
     <li>Monday:8am - 6pm</li>;
-    <li>Tuesday:8am - 6pm,</li>;
-    <li>Wednesday:8am - 6pm,</li>;
-    <li>Thursday:8am - 6pm,</li>;
-    <li>Friday:8am - 6pm,</li>;
+    <li>Tuesday:8am - 6pm</li>;
+    <li>Wednesday:8am - 6pm</li>;
+    <li>Thursday:8am - 6pm</li>;
+    <li>Friday:8am - 6pm</li>;
     <li>Saturday:8am - 10pm</li>;
     </ul>
     </div>
