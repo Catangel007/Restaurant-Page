@@ -3,16 +3,30 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: 'development',
-  entry: "./src/index.js",
+  entry: "./src/index.js", // Ensure this file exists
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
+
+  devtool: "eval-source-map",
+  
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'), // Ensure this directory exists
+    },
+    compress: true,
+    port: 8080,
+    watchFiles: ["./src/home.html"], // This will watch for changes in home.html
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/home.html",  // Make sure this points to your actual HTML file
+      template: "./src/home.html", 
     }),
   ],
+
   module: {
     rules: [
       {
@@ -24,25 +38,9 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-            options: { minimize: false }
-          }
-        ]
-      },
-      { 
-        test: /\.txt$/, 
-        use: 'raw-loader' 
+        test: /\.html$/i,
+        loader: "html-loader",
       }
     ],
-  },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
-    compress: true,
-    port: 8080,
   },
 };
